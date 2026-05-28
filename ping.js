@@ -1,4 +1,4 @@
-const url = "https://berea-web.onrender.com/";
+const url = process.env.TARGET_URL;
 
 async function ping() {
   try {
