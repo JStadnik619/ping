@@ -1,3 +1,7 @@
+# If a repository has had no commits, issues, or PRs in the last 60 days, 
+# GitHub automatically disables scheduled workflows silently. This workflow
+# pushes a commit to re-enable them.
+
 name: Keep Repo Alive
 
 on:
