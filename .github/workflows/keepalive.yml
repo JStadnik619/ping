@@ -29,4 +29,6 @@ jobs:
           git commit --allow-empty -m "chore: keep repo active to prevent workflow disable"
           git push
         env:
+          # GitHub automatically creates a temporary, scoped token for every
+          # job and injects it as the secret (no repo secrets setup required)
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   
